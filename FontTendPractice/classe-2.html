@@ -34,6 +34,7 @@
           display: grid;
           grid-template-rows: auto 1fr auto;
           width: 300px;
+          justify-items: center;
         }
         .logo {
           width: 150px;
@@ -61,6 +62,35 @@
           padding: 6px;
           margin-bottom: 12px;
         }
+        .email-image
+        {
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            background-color: var(--text-input-field);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .email-image img
+        {
+            width: 80px;
+
+        }
+        .resend
+        {
+            font-size: var(--sm);
+        }
+        .resend span
+        {
+           color: var(--very-light-pink);
+        }
+
+        .resend a{
+            color: var(--very-light-green);
+            text-decoration: none;
+        }
         .primary-button {
           background-color: var(--hospital-green);
           border-radius: 8px;
@@ -87,14 +117,22 @@
 <div class="login">
 <div class="form-container">
 <img src="./Document_files/logo_yard_sale.svg" alt="logo" class="logo">
-<h1 class="title">Create a new password</h1>
-<p class="subtitle">Enter a new passwrd for yue account</p>
-<form action="https://static.platzi.com/" class="form">
+<h1 class="title">Email has been sent</h1>
+<p class="subtitle">Please  Check You inbox for instructionx on how to reset the password .</p>
+
+<!-- <form action="https://static.platzi.com/" class="form">
 <input type="submit" value="Confirm" class="primary-button login-button">
-</form>
+</form> -->
 <div class="email-image">
     <img src="./icons/email.svg" alt="email">
 </div>
+<button class="primary-button login-button">Login</button>
+
+<p class="Resend">
+   <span>Didn't receive the email?</span> 
+   <a href="/">Resend</a>
+</p>
+
 </div>
 </div>
 
